@@ -254,7 +254,13 @@ footer ul {
 }
 
 footer li {
+	display: inline-block;
 	padding-right: 100px;
+	vertical-align: middle;
+}
+
+footer li:nth-child(1) a {
+	padding-bottom: 100px;
 }
 
 footer li:last-child {
