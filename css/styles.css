@@ -1,0 +1,598 @@
+@font-face {
+	font-family: "Biko";
+	src: url('fonts/Biko_Regular_1.otf');
+}
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background: url(img/header.png) no-repeat;
+	background-size: 100% 566.66px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(6, 7, 6);
+}
+
+li {
+	display: inline;
+}
+
+/*//////////////////////////////////////////////////////////
+						 Navigation
+//////////////////////////////////////////////////////////*/
+
+header {
+	height: 73px;
+}
+
+nav {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header-logo {
+	margin-top: 30px;
+	float: left;
+}
+
+.header-logo .logo-img, .header-logo h1 {
+	float: left;
+} 
+
+.header-logo h1 {
+	height: inherit;
+	margin: 7px 0 0 5px;
+  	font-family: "Biko";
+  	font-size: 27px;
+  	font-weight: 300;
+  	color: rgb(6, 7, 6);
+  	line-height: 1.2;
+}
+
+nav ul {
+	float: right;
+	margin: 40px 0 0 0;
+	padding: 0;
+	font-size: 19px;
+}
+
+nav li:first-child {
+	padding-right: 100px;
+}
+
+nav li:nth-child(2) {
+	padding-right: 70px;
+}
+
+nav li:last-child {
+	border: 3px solid #000;
+	padding: 6.5px 30px;
+}
+
+/*//////////////////////////////////////////////////////////
+						EyeLeo image
+//////////////////////////////////////////////////////////*/
+
+.about {
+	height: 445px;
+	clear: both;
+	max-width: 980px;
+	margin: 50px auto;
+}
+
+.main-logo img {
+	padding-left: 55px;
+}
+
+.main-logo p {
+	margin: 0;
+	padding-left: 450px;
+	font-size: 18px;
+}
+
+/*//////////////////////////////////////////////////////////
+						Footprints
+//////////////////////////////////////////////////////////*/
+
+.footprints {
+	position: relative;
+}
+
+.one {
+	position: absolute;
+	top: -80px;
+	left: 580px;
+ 	display: none;
+} 
+
+.two {
+	position: absolute;
+	top: -110px;
+	left: 680px;
+ 	display: none;
+}
+
+.three {
+	position: absolute;
+	top: -75px;
+	left: 790px;
+ 	display: none; 
+}
+
+.four {
+	position: absolute;
+	top: -30px;
+	left: 900px;
+ 	display: none; 
+}
+
+.five {
+	position: absolute;
+	top: 65px;
+	left: 930px;
+ 	display: none; 
+}
+
+.six {
+	position: absolute;
+	top: 160px;
+	left: 915px;
+ 	display: none; 
+}
+
+/*//////////////////////////////////////////////////////////
+						Main Text
+//////////////////////////////////////////////////////////*/
+
+.about article h2 {
+	margin: 5px 0 0 110px;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.about article p {
+	text-align: center;
+	font-size: 22px;
+	margin: 40px 50px 0 0; 
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+	body {
+		background-size: 100% 266.66px;
+	}
+/*//////////////////////////////////////////////////////////
+						Navigation
+//////////////////////////////////////////////////////////*/
+	nav {
+		width: 310px;
+	}
+
+	.header-logo {
+		margin: 10px 0 0 5px;
+	}
+
+	.header-logo .logo-img {
+		width: 30%;
+	}
+
+	.header-logo h1 {
+		margin: 9px 0 20px 5px;
+  		font-size: 14px;
+  		font-weight: 300;
+	}
+
+	nav ul {
+		clear: both;
+		float: none;
+		width: 200px;
+		margin: 0 auto;
+		padding: 0;
+		font-size: 11px;
+	}
+
+	nav li:first-child {
+		padding-right: 15px;
+	}
+
+	nav li:nth-child(2) {
+		padding-right: 15px;
+	}
+
+	nav li:last-child {
+		border: 2px solid #000;
+		padding: 2.5px 5px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						EyeLeo image
+//////////////////////////////////////////////////////////*/
+
+	.about {
+		width: 100%;
+		height: 345px;
+		margin: 10px auto;
+	}
+
+	.main-logo {
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	.main-logo img {
+		width: 200px;
+		padding: 0;
+	}
+
+	.main-logo p {
+		font-size: 8px;
+		padding-left: 85px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Footprints
+//////////////////////////////////////////////////////////*/
+
+	.one {
+	 	display: none !important; ; 
+	} 
+
+	.two {
+	 	display: none !important; ;
+	}
+
+	.three {
+	 	display: none !important; ;
+	}
+
+	.four {
+	 	display: none !important; ;
+	}
+
+	.five {
+	 	display: none !important; ;
+	}
+
+	.six {
+		display: none !important; ;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Main Text
+//////////////////////////////////////////////////////////*/
+
+	.about article h2 {
+		width: 200px;
+		margin: 10px auto;
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	.about article p {
+		text-align: center;
+		font-size: 7px;
+		margin: 0;
+		margin-top: 10px; 
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	body {
+		background-size: 100% 326.66px;
+	}
+/*//////////////////////////////////////////////////////////
+						Navigation
+//////////////////////////////////////////////////////////*/
+	nav {
+		width: 400px;
+	}
+
+	.header-logo {
+		margin-left: 15px;
+	}
+
+	.header-logo .logo-img {
+		width: 30%;
+	}
+
+	.header-logo h1 {
+		margin: 9px 0 0 5px;
+  		font-size: 18px;
+  		font-weight: 300;
+	}
+
+	nav ul {
+		width: 240px;
+		margin: 40px 0 0 0;
+		padding: 0;
+		font-size: 13px;
+	}
+
+	nav li:first-child {
+		padding-right: 10px;
+	}
+
+	nav li:nth-child(2) {
+		padding-right: 10px;
+	}
+
+	nav li:last-child {
+		border: 2px solid #000;
+		padding: 2.5px 5px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						EyeLeo image
+//////////////////////////////////////////////////////////*/
+
+	.about {
+		width: 420px;
+		height: 345px;
+		margin: 10px auto;
+	}
+
+	.main-logo img {
+		width: 350px;
+		padding-left: 70px;
+	}
+
+	.main-logo p {
+		font-size: 12px;
+		padding-left: 320px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Footprints
+//////////////////////////////////////////////////////////*/
+
+	.one {
+	 	display: none !important; ; 
+	} 
+
+	.two {
+	 	display: none !important; ;
+	}
+
+	.three {
+	 	display: none !important; ;
+	}
+
+	.four {
+	 	display: none !important; ;
+	}
+
+	.five {
+	 	display: none !important; ;
+	}
+
+	.six {
+		display: none !important; ;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Main Text
+//////////////////////////////////////////////////////////*/
+
+	.about article h2 {
+		margin: 5px 0 0 60px;
+		font-size: 19px;
+		font-weight: 300;
+	}
+
+	.about article p {
+		text-align: center;
+		font-size: 10px;
+		margin: 0;
+		margin-top: 10px; 
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	body {
+		background-size: 100% 406.66px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Navigation
+//////////////////////////////////////////////////////////*/
+
+	nav {
+		width: 660px;
+	}
+
+	nav li:first-child, nav li:nth-child(2) {
+		padding-right: 30px;
+	}
+/*//////////////////////////////////////////////////////////
+						EyeLeo image
+//////////////////////////////////////////////////////////*/
+
+	.about {
+		width: 740px;
+		height: 345px;
+		margin: 30px auto;
+	}
+
+	.main-logo img {
+		width: 350px;
+		padding-left: 80px;
+	}
+
+	.main-logo p {
+		font-size: 16px;
+		padding-left: 315px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Footprints
+//////////////////////////////////////////////////////////*/
+
+	.one {
+		width: 34px;
+		position: absolute;
+		top: -70px;
+		left: 410px;
+	 	display: none;
+	} 
+
+	.two {
+		width: 33px;
+		position: absolute;
+		top: -90px;
+		left: 480px;
+	 	display: none;
+	}
+
+	.three {
+		width: 36px;
+		position: absolute;
+		top: -65px;
+		left: 550px;
+	 	display: none;
+	}
+
+	.four {
+		width: 31px;
+		position: absolute;
+		top: -30px;
+		left: 610px;
+	 	display: none;
+	}
+
+	.five {
+		width: 26px;
+		position: absolute;
+		top: 35px;
+		left: 640px;
+	 	display: none;
+	}
+
+	.six {
+		width: 27px;
+		position: absolute;
+		top: 100px;
+		left: 640px;
+		display: none;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Main Text
+//////////////////////////////////////////////////////////*/
+
+	.about article h2 {
+		margin: 5px 0 0 110px;
+		font-size: 24px;
+		font-weight: 300;
+	}
+
+	.about article p {
+		text-align: center;
+		font-size: 15px;
+		margin: 20px 80px 0 0; 
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {
+		background-size: 100% 466.66px;
+	}
+/*//////////////////////////////////////////////////////////
+						Navigation
+//////////////////////////////////////////////////////////*/
+
+	nav {
+		width: 760px;
+	}
+
+	nav li:first-child, nav li:nth-child(2) {
+		padding-right: 50px;
+	}
+/*//////////////////////////////////////////////////////////
+						EyeLeo image
+//////////////////////////////////////////////////////////*/
+
+	.about {
+		height: 445px;
+		margin: 30px auto;
+	}
+
+	.main-logo img {
+		width: 450px;
+		padding-left: 155px;
+	}
+
+	.main-logo p {
+		padding-left: 405px;
+	}
+/*//////////////////////////////////////////////////////////
+						Footprints
+//////////////////////////////////////////////////////////*/
+	.one {
+		width: 44px;
+		position: absolute;
+		top: -70px;
+		left: 530px;
+	 	display: none;
+	} 
+
+	.two {
+		width: 43px;
+		position: absolute;
+		top: -100px;
+		left: 610px;
+	 	display: none;
+	}
+
+	.three {
+		width: 46px;
+		position: absolute;
+		top: -65px;
+		left: 700px;
+	 	display: none;
+	}
+
+	.four {
+		width: 41px;
+		position: absolute;
+		top: -20px;
+		left: 790px;
+	 	display: none;
+	}
+
+	.five {
+		width: 36px;
+		position: absolute;
+		top: 55px;
+		left: 810px;
+	 	display: none;
+	}
+
+	.six {
+		width: 33px;
+		position: absolute;
+		top: 130px;
+		left: 810px;
+		display: none;
+	}
+/*//////////////////////////////////////////////////////////
+						Main Text
+//////////////////////////////////////////////////////////*/
+	.about article h2 {
+		margin: 5px 0 0 170px;
+		font-size: 30px;
+		font-weight: 300;
+	}
+
+	.about article p {
+		text-align: center;
+		font-size: 18px;
+		margin: 30px 100px 0 0; 
+	}
+}
