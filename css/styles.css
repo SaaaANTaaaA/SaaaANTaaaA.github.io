@@ -8,11 +8,23 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+	margin: 0;
+}
+
 body {
+	height: 100%;
+  	margin: 0;
 	width: 100%;
 	background: url(img/header.png) no-repeat;
 	background-size: 100% 566.66px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  	min-height: 100%;
+  	margin-bottom: -50px;
 }
 
 a {
@@ -75,6 +87,11 @@ nav li:nth-child(2) {
 nav li:last-child {
 	border: 3px solid #000;
 	padding: 6.5px 30px;
+}
+
+nav li a:hover {
+	color: #d58137;
+	text-shadow: 0 0 5px black;
 }
 
 /*//////////////////////////////////////////////////////////
@@ -233,6 +250,12 @@ nav li:last-child {
 	border: none;
 }
 
+.features input:hover {
+	-moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
 /*//////////////////////////////////////////////////////////
 						Footer
 //////////////////////////////////////////////////////////*/
@@ -260,13 +283,32 @@ footer li {
 	vertical-align: middle;
 }
 
+.icon {
+	font-weight: bold;
+	padding: 11px;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+footer li a:hover {
+	color: #d58137;
+	text-shadow: 0 0 5px black;
+}
+
+.icon:hover {
+	border: 2px solid #d58137;
+	-moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+}
+
 footer li:last-child {
 	padding-right: 0;
 }
 
 footer p {
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
@@ -456,6 +498,10 @@ footer p {
 /*//////////////////////////////////////////////////////////
 						Footer
 //////////////////////////////////////////////////////////*/
+	.wrapper {
+		margin-bottom: 20px;
+	}
+
 	footer {
 		height: 135px;
 	}
@@ -468,15 +514,15 @@ footer p {
 	footer ul {
 		width: 300px;
 		font-size: 11px;
-		padding: 60px 0 0 10px;
+		padding: 70px 0 0 10px;
 	}
 
 	footer li {
 		padding-right: 20px;
 	}
 
-	footer li img {
-		width: 30px;
+	.icon {
+		padding: 7px;
 	}
 
 	footer li:last-child {
@@ -669,6 +715,10 @@ footer p {
 /*//////////////////////////////////////////////////////////
 						Footer
 //////////////////////////////////////////////////////////*/
+	.wrapper {
+		margin-bottom: 20px;
+	}
+
 	footer {
 		height: 165px;
 	}
@@ -681,15 +731,15 @@ footer p {
 	footer ul {
 		width: 380px;
 		font-size: 13px;
-		padding: 60px 0 0 0;
+		padding: 80px 0 0 0;
 	}
 
 	footer li {
 		padding-right: 30px;
 	}
 
-	footer li img {
-		width: 37px;
+	.icon {
+		padding: 9px;
 	}
 
 	footer li:last-child {
@@ -698,7 +748,7 @@ footer p {
 
 	footer p {
  		text-align: center;
-		padding-top: 20px;
+		padding-top: 30px;
 		font-size: 13px;
 	}
 }
@@ -897,7 +947,7 @@ footer p {
 
 	footer p {
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 40px;
 	}
 }
 
@@ -1090,6 +1140,217 @@ footer p {
 
 	footer p {
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 40px;
+	}
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+	body {
+		background-size: 100% 466.66px;
+	}
+/*//////////////////////////////////////////////////////////
+						Navigation
+//////////////////////////////////////////////////////////*/
+	nav {
+		width: 1560px;
+	}
+
+	.header-logo .logo-img {
+		width: 45px;
+	} 
+
+	.header-logo h1 {
+		margin: 8px 0 0 5px;
+	  	font-size: 32px;
+	}
+
+	nav ul {
+		font-size: 22px;
+	}
+
+	nav li:first-child, nav li:nth-child(2) {
+		padding-right: 100px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						EyeLeo image
+//////////////////////////////////////////////////////////*/
+	.about {
+		max-width: 980px;
+		margin: 20px auto;
+		margin-bottom: 0;
+		height: 400px;
+	}
+
+	.main-logo img {
+		padding-left: 0;
+	}
+
+	.main-logo p {
+		margin: 0;
+		padding-left: 400px;
+		font-size: 20px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Footprints
+//////////////////////////////////////////////////////////*/
+	.one {
+		width: 54px;
+		position: absolute;
+		top: -80px;
+		left: 560px;
+	 	display: none;
+	} 
+
+	.two {
+		width: 53px;
+		position: absolute;
+		top: -110px;
+		left: 640px;
+	 	display: none;
+	}
+
+	.three {
+		width: 56px;
+		position: absolute;
+		top: -75px;
+		left: 730px;
+	 	display: none;
+	}
+
+	.four {
+		width: 51px;
+		position: absolute;
+		top: -30px;
+		left: 820px;
+	 	display: none;
+	}
+
+	.five {
+		width: 46px;
+		position: absolute;
+		top: 45px;
+		left: 840px;
+	 	display: none;
+	}
+
+	.six {
+		width: 43px;
+		position: absolute;
+		top: 125px;
+		left: 850px;
+		display: none;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Main Text
+//////////////////////////////////////////////////////////*/
+	.about article h2 {
+		margin: 5px 0 0 170px;
+		font-size: 30px;
+		font-weight: 300;
+	}
+
+	.about article p {
+		text-align: center;
+		font-size: 20px;
+		margin: 20px 100px 0 0; 
+	}
+
+/*//////////////////////////////////////////////////////////
+						Features
+//////////////////////////////////////////////////////////*/
+	.features {
+		height: 560px;
+		max-width: 1080px;
+		margin-top: 50px;
+	}
+
+	.features article {
+		width: 590px;
+	}
+
+	.features article h2 {
+		font-size: 36px;
+		margin: 10px 0 0 215px;
+	}
+
+	.features article p {
+		font-size: 22px;
+		margin: 20px 0 0 0; 
+		line-height: 24px;
+	}
+
+	.features figure {
+		margin: 0;
+		margin-top: 10px;
+		position: absolute;
+		right: 80px;
+	}
+
+	.features figure img {
+		width: 400px;
+	}
+
+	.buy {
+		padding-top: 140px;
+		width: 900px;
+	}
+
+	.buy-logo {
+		width: 400px;
+		margin-left: 140px; 
+	}
+
+	.buy-logo img {
+		width: 70px;
+		float: left;
+	}
+
+	.buy-logo h3 {
+		font-size: 54px;
+		margin: 5px 0 0 15px;
+	}
+
+	.features input {
+		margin-top: 16px;
+		padding: 10px 26px;
+	}
+
+/*//////////////////////////////////////////////////////////
+						Footer
+//////////////////////////////////////////////////////////*/
+	footer {
+		height: 235px;
+	}
+
+	.footer-nav {
+		width: 1080px;
+		margin: 0 auto;
+	}
+
+	footer ul {
+		width: 1080px;
+		font-size: 22px;
+		padding: 100px 0 0 65px;
+	}
+
+	.icon {
+		padding: 15px;
+	}
+
+	footer li {
+		padding-right: 150px;
+	}
+
+	footer li:last-child {
+		padding-right: 0;
+	}
+
+	footer p {
+		font-size: 18px;
+		text-align: center;
+		padding-top: 40px;
 	}
 }
