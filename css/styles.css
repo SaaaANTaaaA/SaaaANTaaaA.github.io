@@ -248,6 +248,14 @@ nav li a:hover {
 	padding: 9px 24px;
 	background-color: #347a51;
 	border: none;
+	outline: none;
+}
+
+.features input:hover {
+	-moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    color: #d58137;
 }
 
 .features input:hover {
