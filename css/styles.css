@@ -354,12 +354,8 @@ footer p {
 		font-size: 11px;
 	}
 
-	nav li:first-child {
-		padding-right: 15px;
-	}
-
-	nav li:nth-child(2) {
-		padding-right: 15px;
+	nav li:first-child, nav li:nth-child(2) {
+		padding-right: 10px;
 	}
 
 	nav li:last-child {
